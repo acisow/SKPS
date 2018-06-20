@@ -1,0 +1,159 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+20
+(
+    wall-ns_air
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          67873;
+        startFace       18258534;
+    }
+    ns_symmetry
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          22633;
+        startFace       18326407;
+    }
+    ns_symmetry_up
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          1807;
+        startFace       18349040;
+    }
+    ns_outlet
+    {
+        type            patch;
+        nFaces          674;
+        startFace       18350847;
+    }
+    ns_road
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          45162;
+        startFace       18351521;
+    }
+    ns_inlet
+    {
+        type            patch;
+        nFaces          674;
+        startFace       18396683;
+    }
+    ns_symmetry_side
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          1787;
+        startFace       18397357;
+    }
+    ns_mono
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          22706;
+        startFace       18399144;
+    }
+    ns_rear_body
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          28183;
+        startFace       18421850;
+    }
+    ns_driver
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1806;
+        startFace       18450033;
+    }
+    ns_dyf_secondary_channel
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          22609;
+        startFace       18451839;
+    }
+    ns_dyf_vortex
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          16433;
+        startFace       18474448;
+    }
+    ns_dyf_floor
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          18542;
+        startFace       18490881;
+    }
+    ns_chlodnica_outlet
+    {
+        type            patch;
+        nFaces          276;
+        startFace       18509423;
+    }
+    ns_front_wing
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          121704;
+        startFace       18509699;
+    }
+    ns_03mm
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          16877;
+        startFace       18631403;
+    }
+    ns_rear_wing
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          117124;
+        startFace       18648280;
+    }
+    ns_rear_wheel
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          50440;
+        startFace       18765404;
+    }
+    ns_front_wheel
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          49643;
+        startFace       18815844;
+    }
+    ns_dyf_main_channel
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          20865;
+        startFace       18865487;
+    }
+)
+
+// ************************************************************************* //
